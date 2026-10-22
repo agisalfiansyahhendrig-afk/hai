@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Dulu Yuk! 🔒</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .container {
+            background: linear-gradient(180deg, #3d232b 0%, #2a161d 100%);
+            width: 100%;
+            max-width: 360px;
+            padding: 35px 25px;
+            border-radius: 28px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .heart-icon {
+            font-size: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 18px;
+            margin: 0 auto 20px auto;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        p.subtitle {
+            font-size: 13px;
+            color: #d1b8c0;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        /* Pin Dots */
+        .dots-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #8c6b75;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .dot.active {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            box-shadow: 0 0 8px rgba(255,255,255,0.8);
+        }
+
+        /* Keypad */
+        .keypad {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .key {
+            background: rgba
